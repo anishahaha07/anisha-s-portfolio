@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaTerminal, FaTimes, FaBars } from "react-icons/fa";
 
 const Links = [
   { name: "HOME", link: "/" },
@@ -13,18 +14,18 @@ const Navbar = () => {
     <div className='w-full fixed top-0 left-0 bg-transparent z-10'>
       <div className='flex items-center justify-between px-6 md:px-16 py-6'>
         {/* Logo */}
-        <div className='cursor-pointer flex items-center font-bold text-2xl text-black'>
-          <span className='text-3xl'>
-            <ion-icon name='terminal-outline'></ion-icon>
+        <div className='cursor-pointer flex items-center font-bold text-2xl text-white'>
+          <span className='text-3xl mr-2'>
+            <FaTerminal />
           </span>
         </div>
 
         {/* Mobile Menu Button */}
         <div
-          className='md:hidden text-3xl cursor-pointer z-20' // Added z-20
+          className='md:hidden text-3xl cursor-pointer z-20 text-black'
           onClick={() => setOpen(!open)}
         >
-          <ion-icon name={open ? "close-outline" : "menu-outline"}></ion-icon>
+          {open ? <FaTimes /> : <FaBars />}
         </div>
 
         {/* Mobile Menu */}
