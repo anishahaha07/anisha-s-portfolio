@@ -1,25 +1,16 @@
-import React from "react";
+import { React } from "react";
+import { Typewriter } from "react-simple-typewriter";
 import Navbar from "./Navbar";
 const Homepage = () => {
   return (
     <>
       <Navbar />
-      <div className='w-full bg-anisha bg-myBg h-screen'>
-        <div className='grid grid-cols-2'>
-          <div className='flex flex-col'>
-            <div className='top-1/5 absolute min-h-screen px-4 md:px-20'>
-              <div className='text-white text-3xl md:text-6xl font-light font-inconsolata w-full md:text-left'>
-                Hello, World!
-              </div>
-              <div className='font-inconsolata font-light text-2xl py-5 '>
-                {" "}
-                cd > Anisha Bhandare
-              </div>
-            </div>
+      <div className='h-screen w-full flex items-center justify-center '>
+        <div className='grid grid-cols'>
+          <div className='text-2xl text-center font-extralight font-inconsolata'>
+            cd &gt; Anisha Bhandare
           </div>
-          <div className='flex flex-col'>
-            <div className=' '></div>
-          </div>
+          <div className='font-inconsolata text-6xl'>Hello, World!</div>
         </div>
       </div>
     </>

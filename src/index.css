@@ -3,6 +3,8 @@
 @theme {
   --font-inconsolata: Inconsolata, "monospace";
   --color-myBg: #7f7777;
+  --color-terminalColor: #2e2d2d;
+  --color-terminalFont: #afafaf;
 }
 
 @import "tailwindcss";

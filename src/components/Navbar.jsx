@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className='w-full fixed top-0 left-0 bg-transparent z-10'>
       <div className='flex items-center justify-between px-6 md:px-16 py-6'>
         {/* Logo */}
-        <div className='cursor-pointer flex items-center font-bold text-2xl text-white'>
+        <div className='cursor-pointer flex items-center font-bold text-2xl text-black'>
           <span className='text-3xl mr-2'>
             <FaTerminal />
           </span>
