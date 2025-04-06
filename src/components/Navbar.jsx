@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaTerminal, FaTimes, FaBars } from "react-icons/fa";
 
 const Links = [
   { name: "HOME", link: "/" },
-  { name: "ABOUT ME", link: "/" },
-  { name: "PROJECTS", link: "/" },
-  { name: "CONTACT", link: "/" },
+  { name: "ABOUT ME", link: "/AboutMe" },
+  { name: "PROJECTS", link: "/projects" },
 ];
 
 const Navbar = () => {
@@ -49,12 +49,13 @@ const Navbar = () => {
               key={link.name}
               className='text-xl p-4 md:p-0 border-b border-gray-700 md:border-0 font-inconsolata'
             >
-              <a
-                href={link.link}
+              <Link
+                to={link.link}
                 className='text-[#c9d1d9] hover:text-[#10b981] hover:drop-shadow-[0_0_6px_#10b981] transition duration-300 block md:inline'
+                onClick={() => setOpen(false)} // Close mobile menu on link click
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
