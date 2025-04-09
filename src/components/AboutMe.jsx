@@ -24,6 +24,7 @@ import { RiSupabaseLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb, SiMysql } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { BiLogoGmail } from "react-icons/bi";
+import myImage from "../assets/myBgImage.jpg";
 
 // import { motion } from "framer-motion"; // uncomment if animations are needed later
 
@@ -264,9 +265,9 @@ const AboutMe = () => {
         <div className='grid col-span-1'>
           <div className='flex flex-col items-center pt-16 md:pt-28 space-y-6'>
             {/* Profile Image */}
-            <div className='w-60 h-60 rounded-full overflow-hidden border-4 border-[#10b981] shadow-lg'>
+            <div className='w-100 h-100 rounded-full overflow-hidden shadow-lg'>
               <img
-                src='/your-image.jpg'
+                src={myImage}
                 alt='Anisha Bhandare'
                 className='w-full h-full object-cover'
               />
