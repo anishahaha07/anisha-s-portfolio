@@ -9,7 +9,7 @@ const Homepage = () => {
       <div className='h-screen w-full bg-[#0d1117] text-[#c9d1d9] flex items-center justify-center'>
         <div className='flex flex-col items-center text-center space-y-4'>
           <div className='text-2xl font-light font-inconsolata'>
-            cd &gt; Anisha Bhandare
+            cd &gt;Anisha Bhandare
           </div>
 
           <div className='font-inconsolata text-6xl'>Hello, World!</div>
