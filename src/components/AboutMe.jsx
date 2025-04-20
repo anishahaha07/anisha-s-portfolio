@@ -216,7 +216,7 @@ const AboutMe = () => {
             </div>{" "}
             <br />
             <h2 className='text-xl md:text-2xl font-bold text-[#a2a7a5] mb-4'>
-              Backend
+              Backend and Databases
             </h2>
             <div className='flex flex-wrap gap-3'>
               {backend.map((backend) => (
