@@ -9,135 +9,92 @@ import {
   FaJava,
   FaFigma,
   FaDocker,
-  FaGithub,
-  FaLinkedin,
 } from "react-icons/fa";
-
 import {
   PiMicrosoftExcelLogoFill,
   PiFileCpp,
   PiMicrosoftWordLogoThin,
   PiMicrosoftPowerpointLogoDuotone,
 } from "react-icons/pi";
-
 import { RiSupabaseLine, RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb, SiMysql } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
-import { BiLogoGmail } from "react-icons/bi";
-import myImage from "../assets/myBgImage.jpg";
-
-// import { motion } from "framer-motion"; // uncomment if animations are needed later
+import myImage from "../assets/myBgImage.jpg"; // Replace this with your actual image path
 
 const frontend = [
-  {
-    name: "HTML",
-    icon: <FaHtml5 className='text-orange-500 text-3xl flex-shrink-0' />,
-  },
-  {
-    name: "CSS",
-    icon: <FaCss3Alt className='text-blue-500 text-3xl flex-shrink-0' />,
-  },
+  { name: "HTML", icon: <FaHtml5 className='text-orange-500 text-3xl' /> },
+  { name: "CSS", icon: <FaCss3Alt className='text-blue-500 text-3xl' /> },
   {
     name: "JavaScript",
-    icon: (
-      <TbBrandJavascript className='text-yellow-400 text-3xl flex-shrink-0' />
-    ),
+    icon: <TbBrandJavascript className='text-yellow-400 text-3xl' />,
   },
   {
     name: "Tailwind CSS",
-    icon: (
-      <RiTailwindCssFill className='text-cyan-400 text-3xl flex-shrink-0' />
-    ),
+    icon: <RiTailwindCssFill className='text-cyan-400 text-3xl' />,
   },
   {
     name: "Bootstrap",
-    icon: <FaBootstrap className='text-purple-500 text-3xl flex-shrink-0' />,
+    icon: <FaBootstrap className='text-purple-500 text-3xl' />,
   },
-  {
-    name: "PHP",
-    icon: <FaPhp className='text-indigo-400 text-3xl flex-shrink-0' />,
-  },
-  {
-    name: "ReactJS",
-    icon: <FaReact className='text-blue-400 text-3xl flex-shrink-0' />,
-  },
+  { name: "PHP", icon: <FaPhp className='text-indigo-400 text-3xl' /> },
+  { name: "ReactJS", icon: <FaReact className='text-blue-400 text-3xl' /> },
 ];
 
 const backend = [
-  {
-    name: "PHP",
-    icon: <FaPhp className='text-indigo-400 text-3xl flex-shrink-0' />,
-  },
-  {
-    name: "MySQL",
-    icon: <SiMysql className='text-yellow-200 text-3xl flex-shrink-0' />,
-  },
-  {
-    name: "MongoDB",
-    icon: <SiMongodb className='text-green-500 text-3xl flex-shrink-0' />,
-  },
+  { name: "PHP", icon: <FaPhp className='text-indigo-400 text-3xl' /> },
+  { name: "MySQL", icon: <SiMysql className='text-yellow-200 text-3xl' /> },
+  { name: "MongoDB", icon: <SiMongodb className='text-green-500 text-3xl' /> },
   {
     name: "Supabase",
-    icon: (
-      <RiSupabaseLine className='text-emerald-400 text-3xl flex-shrink-0' />
-    ),
+    icon: <RiSupabaseLine className='text-emerald-400 text-3xl' />,
   },
 ];
 
 const prglang = [
-  {
-    name: "C++",
-    icon: <PiFileCpp className='text-indigo-400 text-3xl flex-shrink-0' />,
-  },
-  {
-    name: "Python",
-    icon: <FaPython className='text-yellow-200 text-3xl flex-shrink-0' />,
-  },
-  {
-    name: "Java",
-    icon: <FaJava className='text-blue-500 text-3xl flex-shrink-0' />,
-  },
+  { name: "C++", icon: <PiFileCpp className='text-indigo-400 text-3xl' /> },
+  { name: "Python", icon: <FaPython className='text-yellow-200 text-3xl' /> },
+  { name: "Java", icon: <FaJava className='text-blue-500 text-3xl' /> },
 ];
 
 const tools = [
-  {
-    name: "Docker",
-    icon: <FaDocker className='text-blue-600 text-3xl flex-shrink-0' />,
-  },
-  {
-    name: "Figma",
-    icon: <FaFigma className='text-red-300 text-3xl flex-shrink-0' />,
-  },
+  { name: "Docker", icon: <FaDocker className='text-blue-600 text-3xl' /> },
+  { name: "Figma", icon: <FaFigma className='text-red-300 text-3xl' /> },
   {
     name: "MS-Excel",
-    icon: (
-      <PiMicrosoftExcelLogoFill className='text-green-400 text-3xl flex-shrink-0' />
-    ),
+    icon: <PiMicrosoftExcelLogoFill className='text-green-400 text-3xl' />,
   },
   {
     name: "MS-PowerPoint",
     icon: (
-      <PiMicrosoftPowerpointLogoDuotone className='text-orange-400 text-3xl flex-shrink-0' />
+      <PiMicrosoftPowerpointLogoDuotone className='text-orange-400 text-3xl' />
     ),
   },
   {
     name: "MS-Word",
-    icon: (
-      <PiMicrosoftWordLogoThin className='text-blue-800 text-3xl flex-shrink-0' />
-    ),
+    icon: <PiMicrosoftWordLogoThin className='text-blue-800 text-3xl' />,
   },
 ];
 
 const AboutMe = () => {
   return (
-    <div className='min-h-screen px-10 py-[120px] md:px-20 bg-[#0d1117] text-[#c9d1d9] font-jetbrains'>
-      <div className='text-4xl font-light'>cd &gt; README.MD </div>
+    <div className='min-h-screen px-6 sm:px-10 md:px-20 py-[120px] bg-[#0d1117] text-[#c9d1d9] font-jetbrains'>
+      <div className='text-4xl font-light'>cd &gt; README.MD</div>
       <br />
       <br />
       <br />
-      <div className='grid grid-cols-2'>
-        <div className='grid col-span-1'>
-          <div className='text-3xl'>Hola! I am Anisha Bhandare !</div>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+        {/* Photo Section */}
+        {/* Photo Section with Gradient Background */}
+        <div className='flex justify-center md:justify-start'>
+          <img
+            src={myImage}
+            alt='Anisha'
+            className='w-60 h-60 sm:w-72 sm:h-72 lg:w-[22rem] lg:h-[22rem] xl:w-[26rem] xl:h-[26rem] rounded-full object-cover'
+          />
+        </div>
+        {/* About and Skills */}
+        <div>
+          <div className='text-3xl'>Hola! I am Anisha Bhandare!</div>
           <br />
           <p className='text-base md:text-lg leading-relaxed tracking-wide'>
             I am a Computer-Engineering student with a passion for building
@@ -151,7 +108,7 @@ const AboutMe = () => {
               Internship Experience
             </h2>
             <div className='bg-[#161b22] p-6 rounded-lg border border-[#30363d] shadow-md'>
-              <h3 className='text-xl font-semibold text-[#c9d1d9] mb-2'>
+              <h3 className='text-xl font-semibold mb-2'>
                 Austere Systems Limited{" "}
                 <span className='text-sm text-[#8b949e]'>(1 Month)</span>
               </h3>
@@ -166,12 +123,14 @@ const AboutMe = () => {
               </p>
             </div>
           </section>
+
+          {/* Open Source Section */}
           <section className='mt-10'>
             <h2 className='text-2xl md:text-3xl font-bold text-[#10b981] mb-4'>
               Open Source Experience
             </h2>
             <div className='bg-[#161b22] p-6 rounded-lg border border-[#30363d] shadow-md'>
-              <h3 className='text-xl font-semibold text-[#c9d1d9] mb-2'>
+              <h3 className='text-xl font-semibold mb-2'>
                 Winter of Code 4.0 – Devfolio
               </h3>
               <p className='text-[#c9d1d9]/90 leading-relaxed tracking-wide'>
@@ -185,124 +144,52 @@ const AboutMe = () => {
                 , enhancing developer experience, fixing terminal warnings,
                 improving SSR support, and writing custom ESLint rules for
                 consistent coding practices.
-                <br />
-                <br />
-                This experience deepened my understanding of modern web
-                frameworks, collaborative development on GitHub, and the
-                importance of writing clean, maintainable code in a
-                community-driven project.
               </p>
             </div>
           </section>
-
-          {/* Skills Section */}
-          <section className='mt-10'>
-            <h2 className='text-2xl md:text-3xl font-bold text-[#10b981] mb-4'>
-              Skills
-            </h2>
-            <h2 className='text-xl md:text-2xl font-bold text-[#a2a7a5] mb-4'>
-              Frontend
-            </h2>
-            <div className='flex flex-wrap gap-3'>
-              {frontend.map((frontend) => (
-                <div
-                  key={frontend.name}
-                  className='flex items-center gap-3 px-6 py-4 bg-[#161b22] border border-[#30363d] text-[#c9d1d9] rounded-md font-inconsolata text-base font-medium hover:scale-105 hover:shadow-md transition-transform duration-200 ease-in-out'
-                >
-                  {frontend.icon}
-                  <span>{frontend.name}</span>
-                </div>
-              ))}
-            </div>{" "}
-            <br />
-            <h2 className='text-xl md:text-2xl font-bold text-[#a2a7a5] mb-4'>
-              Backend and Databases
-            </h2>
-            <div className='flex flex-wrap gap-3'>
-              {backend.map((backend) => (
-                <div
-                  key={backend.name}
-                  className='flex items-center gap-3 px-6 py-4 bg-[#161b22] border border-[#30363d] text-[#c9d1d9] rounded-md font-inconsolata text-base font-medium hover:scale-105 hover:shadow-md transition-transform duration-200 ease-in-out'
-                >
-                  {backend.icon}
-                  <span>{backend.name}</span>
-                </div>
-              ))}
-            </div>
-            <br />
-            <h2 className='text-xl md:text-2xl font-bold text-[#a2a7a5] mb-4'>
-              Programming Languages
-            </h2>
-            <div className='flex flex-wrap gap-3'>
-              {prglang.map((prglang) => (
-                <div
-                  key={prglang.name}
-                  className='flex items-center gap-3 px-6 py-4 bg-[#161b22] border border-[#30363d] text-[#c9d1d9] rounded-md font-inconsolata text-base font-medium hover:scale-105 hover:shadow-md transition-transform duration-200 ease-in-out'
-                >
-                  {prglang.icon}
-                  <span>{prglang.name}</span>
-                </div>
-              ))}
-            </div>
-            <br />
-            <h2 className='text-xl md:text-2xl font-bold text-[#a2a7a5] mb-4'>
-              Tools
-            </h2>
-            <div className='flex flex-wrap gap-3'>
-              {tools.map((tools) => (
-                <div
-                  key={tools.name}
-                  className='flex items-center gap-3 px-6 py-4 bg-[#161b22] border border-[#30363d] text-[#c9d1d9] rounded-md font-inconsolata text-base font-medium hover:scale-105 hover:shadow-md transition-transform duration-200 ease-in-out'
-                >
-                  {tools.icon}
-                  <span>{tools.name}</span>
-                </div>
-              ))}
-            </div>
-          </section>
         </div>
+      </div>
 
-        <div className='grid col-span-1'>
-          <div className='flex flex-col items-center pt-16 md:pt-28 space-y-6'>
-            {/* Profile Image */}
-            <div className='w-100 h-100 rounded-full overflow-hidden shadow-lg'>
-              <img
-                src={myImage}
-                alt='Anisha Bhandare'
-                className='w-full h-full object-cover'
-              />
-            </div>
+      {/* Skills Section (Full Width) */}
+      <div className='mt-20'>
+        <h2 className='text-2xl md:text-3xl font-bold text-[#10b981] mb-6'>
+          Skills
+        </h2>
+        <div className='space-y-6'>
+          {/* Frontend */}
+          <SkillBlock title='Frontend' data={frontend} />
 
-            {/* Social Icons */}
-            <div className='flex space-x-4'>
-              <a
-                href='https://github.com/anishahaha07'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-gray-700 hover:text-white text-4xl transition-transform transform hover:scale-110'
-              >
-                <FaGithub />
-              </a>
-              <a
-                href='https://www.linkedin.com/in/anisha-bhandare-21583722b/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-blue-700 hover:text-blue-400 text-4xl transition-transform transform hover:scale-110'
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href='mailto:bhandare.ani@gmail.com'
-                className='text-red-500 hover:text-red-700 text-4xl transition-transform transform hover:scale-110'
-              >
-                <BiLogoGmail />
-              </a>
-            </div>
-          </div>
+          {/* Backend */}
+          <SkillBlock title='Backend and Databases' data={backend} />
+
+          {/* Programming Languages */}
+          <SkillBlock title='Programming Languages' data={prglang} />
+
+          {/* Tools */}
+          <SkillBlock title='Tools' data={tools} />
         </div>
       </div>
     </div>
   );
 };
+
+const SkillBlock = ({ title, data }) => (
+  <div>
+    <h3 className='text-xl md:text-2xl font-bold text-[#a2a7a5] mb-2'>
+      {title}
+    </h3>
+    <div className='flex flex-wrap gap-3'>
+      {data.map((item) => (
+        <div
+          key={item.name}
+          className='flex items-center gap-3 px-6 py-4 bg-[#161b22] border border-[#30363d] rounded-md font-inconsolata text-base font-medium hover:scale-105 hover:shadow-md transition-transform duration-200 ease-in-out'
+        >
+          {item.icon}
+          <span>{item.name}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+);
 
 export default AboutMe;
